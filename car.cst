@@ -1,0 +1,318 @@
+//================================================
+// Clock
+//================================================
+
+IO_LOC "clk" Y18;
+IO_PORT "clk" IO_TYPE=LVCMOS33;
+
+
+//================================================
+// Reset
+//================================================
+
+IO_LOC "reset_n" B21;
+IO_PORT "reset_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+//================================================
+// UART TX
+//================================================
+
+IO_LOC "uart_tx" M15;
+IO_PORT "uart_tx" IO_TYPE=LVCMOS33;
+
+//================================================
+// UART RX
+//================================================
+
+IO_LOC "uart_rx" J21;
+IO_PORT "uart_rx" IO_TYPE=LVCMOS33;
+
+
+//================================================
+// Motor A 左前
+//================================================
+
+IO_LOC "motor_a_pwm" A13;
+IO_PORT "motor_a_pwm" IO_TYPE=LVCMOS33;
+
+IO_LOC "motor_a_in1" A14;
+IO_PORT "motor_a_in1" IO_TYPE=LVCMOS33;
+
+IO_LOC "motor_a_in2" A15;
+IO_PORT "motor_a_in2" IO_TYPE=LVCMOS33;
+
+
+//================================================
+// Motor B 左后
+//================================================
+
+IO_LOC "motor_b_pwm" A16;
+IO_PORT "motor_b_pwm" IO_TYPE=LVCMOS33;
+
+IO_LOC "motor_b_in1" A18;
+IO_PORT "motor_b_in1" IO_TYPE=LVCMOS33;
+
+IO_LOC "motor_b_in2" A19;
+IO_PORT "motor_b_in2" IO_TYPE=LVCMOS33;
+
+
+//================================================
+// Motor C 右前
+//================================================
+
+IO_LOC "motor_c_pwm" F13;
+IO_PORT "motor_c_pwm" IO_TYPE=LVCMOS33;
+
+IO_LOC "motor_c_in1" F14;
+IO_PORT "motor_c_in1" IO_TYPE=LVCMOS33;
+
+IO_LOC "motor_c_in2" E13;
+IO_PORT "motor_c_in2" IO_TYPE=LVCMOS33;
+
+
+//================================================
+// Motor D 右后
+//================================================
+
+IO_LOC "motor_d_pwm" E14;
+IO_PORT "motor_d_pwm" IO_TYPE=LVCMOS33;
+
+IO_LOC "motor_d_in1" C13;
+IO_PORT "motor_d_in1" IO_TYPE=LVCMOS33;
+
+IO_LOC "motor_d_in2" B13;
+IO_PORT "motor_d_in2" IO_TYPE=LVCMOS33;
+//================================================
+// Encoder A 左前
+//================================================
+
+IO_LOC "encoder_a_cha" D14;
+IO_PORT "encoder_a_cha" IO_TYPE=LVCMOS33;
+
+IO_LOC "encoder_a_chb" D15;
+IO_PORT "encoder_a_chb" IO_TYPE=LVCMOS33;
+
+
+//================================================
+// Encoder B 左后
+//================================================
+
+IO_LOC "encoder_b_cha" C14;
+IO_PORT "encoder_b_cha" IO_TYPE=LVCMOS33;
+
+IO_LOC "encoder_b_chb" C15;
+IO_PORT "encoder_b_chb" IO_TYPE=LVCMOS33;
+
+
+//================================================
+// Encoder C 右前
+//================================================
+
+IO_LOC "encoder_c_cha" B15;
+IO_PORT "encoder_c_cha" IO_TYPE=LVCMOS33;
+
+IO_LOC "encoder_c_chb" B16;
+IO_PORT "encoder_c_chb" IO_TYPE=LVCMOS33;
+
+
+//================================================
+// Encoder D 右后
+//================================================
+
+IO_LOC "encoder_d_cha" D17;
+IO_PORT "encoder_d_cha" IO_TYPE=LVCMOS33;
+
+IO_LOC "encoder_d_chb" C17;
+IO_PORT "encoder_d_chb" IO_TYPE=LVCMOS33;
+//================================================
+// MPU9250 I2C
+// 使用GPIO0扩展接口
+//================================================
+
+IO_LOC "imu_sda" E16;// GPIO0_20 
+IO_PORT "imu_sda" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC "imu_scl" D16;// GPIO0_21
+IO_PORT "imu_scl" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+// SG90 Servo 舵机
+//================================================
+IO_LOC "servo_pwm" B17;
+IO_PORT "servo_pwm" IO_TYPE=LVCMOS33;
+
+
+//================================================
+// HC-SR04 Ultrasonic
+//================================================
+IO_LOC "ultra_trig" B18;
+IO_PORT "ultra_trig" IO_TYPE=LVCMOS33;
+
+IO_LOC "ultra_echo" C18;   
+IO_PORT "ultra_echo" IO_TYPE=LVCMOS33;
+
+//================================================
+// TOF1 - VL53L0X左
+// 独立 I2C BUS 1
+//================================================
+
+IO_LOC "tof1_sda" C20;      // GPIO0_29
+IO_PORT "tof1_sda" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC "tof1_scl" D20;      // GPIO0_28
+IO_PORT "tof1_scl" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+
+//================================================
+// TOF2 - VL53L0X右
+// 独立 I2C BUS 2
+//================================================
+
+IO_LOC "tof2_sda" D19;      // GPIO0_30
+IO_PORT "tof2_sda" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC "tof2_scl" E19;      // GPIO0_31
+IO_PORT "tof2_scl" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+
+//================================================
+// TOF3 - VL53L0X
+// 独立 I2C BUS 3中
+//======================          ==========================
+
+IO_LOC "tof3_sda" F20;      // GPIO0_32
+IO_PORT "tof3_sda" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC "tof3_scl" F19;      // GPIO0_33
+IO_PORT "tof3_scl" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+
+ //==========================================
+ // OV5640 CAMERA - ACG720 60K
+ //==========================================
+
+ IO_LOC "camera_xclk" M17;
+ IO_PORT "camera_xclk" IO_TYPE=LVCMOS33;
+
+ IO_LOC "camera_pclk" B1;
+ IO_PORT "camera_pclk" IO_TYPE=LVCMOS33;
+
+ IO_LOC "camera_vsync" B2;
+ IO_PORT "camera_vsync" IO_TYPE=LVCMOS33;
+
+ IO_LOC "camera_href" A1;
+ IO_PORT "camera_href" IO_TYPE=LVCMOS33;
+
+ IO_LOC "camera_rst_n" N20;
+ IO_PORT "camera_rst_n" IO_TYPE=LVCMOS33;
+
+ IO_LOC "camera_pwdn" L1;
+ IO_PORT "camera_pwdn" IO_TYPE=LVCMOS33;
+
+ IO_LOC "camera_sclk" M20;
+ IO_PORT "camera_sclk" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+ IO_LOC "camera_sdat" L18;
+ IO_PORT "camera_sdat" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+ IO_LOC "camera_data[7]" E1;
+ IO_LOC "camera_data[6]" D1;
+ IO_LOC "camera_data[5]" G2;
+ IO_LOC "camera_data[4]" F1;
+ IO_LOC "camera_data[3]" H2;
+ IO_LOC "camera_data[2]" G1;
+ IO_LOC "camera_data[1]" J1;
+ IO_LOC "camera_data[0]" J2;
+
+ IO_PORT "camera_data[7]" IO_TYPE=LVCMOS33;
+ IO_PORT "camera_data[6]" IO_TYPE=LVCMOS33;
+ IO_PORT "camera_data[5]" IO_TYPE=LVCMOS33;
+ IO_PORT "camera_data[4]" IO_TYPE=LVCMOS33;
+ IO_PORT "camera_data[3]" IO_TYPE=LVCMOS33;
+ IO_PORT "camera_data[2]" IO_TYPE=LVCMOS33;
+ IO_PORT "camera_data[1]" IO_TYPE=LVCMOS33;
+ IO_PORT "camera_data[0]" IO_TYPE=LVCMOS33;
+
+ //==========================================
+ // HDMI TMDS
+ //==========================================
+
+ IO_LOC "tmds_clk_p" K4;
+ IO_PORT "tmds_clk_p" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+ IO_LOC "tmds_clk_n" J4;
+ IO_PORT "tmds_clk_n" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+ IO_LOC "tmds_data_p[2]" M3;
+ IO_PORT "tmds_data_p[2]" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+ IO_LOC "tmds_data_n[2]" M2;
+ IO_PORT "tmds_data_n[2]" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+ IO_LOC "tmds_data_p[1]" L5;
+ IO_PORT "tmds_data_p[1]" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+ IO_LOC "tmds_data_n[1]" L4;
+ IO_PORT "tmds_data_n[1]" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+ IO_LOC "tmds_data_p[0]" L3;
+ IO_PORT "tmds_data_p[0]" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+ IO_LOC "tmds_data_n[0]" K3;
+ IO_PORT "tmds_data_n[0]" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+//=============================================
+// Four-ToF final layout: REAR VL53L0X
+// 7-bit I2C address 0x29, separate bus
+// SDA=F16, SCL=F17 (ACG720 GPIO)
+// Module logic-level SDA/SCL must be 3.3V compatible
+//=============================================
+IO_LOC "tof4_sda" E17;
+IO_PORT "tof4_sda" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_LOC "tof4_scl" F16;
+IO_PORT "tof4_scl" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+
+// =============================================================
+// NEW: A5 / A6 two external keys (active LOW).
+// Both buttons: GPIO signal to GND; never connect GPIO to 5V.
+// Choose TWO REAL, exposed, UNUSED GPIO pads for your ACG720.
+// IMPORTANT: B21 is existing reset_n and must NOT be reused.
+// YOU MUST REPLACE THE COMMENTED IO_LOC LINES WITH VERIFIED PINS:
+// IO_LOC "key_a5_n" <YOUR_VERIFIED_A5_GPIO_PAD>;
+// IO_LOC "key_a6_n" <YOUR_VERIFIED_A6_GPIO_PAD>;
+// Do not download bitstream before both pins are correctly assigned.
+// =============================================================
+
+//
+// =============================================
+// ACG720 On-board Buttons
+// S0 = A5 Autonomous Obstacle Avoidance
+// S1 = A6 Waypoint Navigation
+// =============================================
+
+IO_LOC "key_a5_n" F15;
+IO_PORT "key_a5_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC "key_a6_n" A20;
+IO_PORT "key_a6_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+
+
+ // =============================================================
+ // 板载模式选择按键（低电平有效，内部上拉）
+ // S2 = 本地模式；S3 = BM1684上位机通信模式
+ // 按键表：S2=B20，S3=A21。原S0/S1的A5/A6功能保持不变。
+ // =============================================================
+ IO_LOC "key_mode_local_n" B20;
+ IO_PORT "key_mode_local_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+ IO_LOC "key_mode_host_n" A21;
+ IO_PORT "key_mode_host_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+//=============================================================
+// SW0: HDMI display page selector
+// G22 from ACG720-138&60K pin assignment table.
+// Assumed switch ON = low; internal pull-up selects BASIC when OFF.
+//=============================================================
+IO_LOC "ui_mode_sw0" G22;
+IO_PORT "ui_mode_sw0" IO_TYPE=LVCMOS33 PULL_MODE=UP;

@@ -1,0 +1,70 @@
+//================================================
+// Clock
+//================================================
+
+IO_LOC "clk" Y18;
+IO_PORT "clk" IO_TYPE=LVCMOS33;
+
+
+//================================================
+// Reset
+//================================================
+
+IO_LOC "reset_n" B21;
+IO_PORT "reset_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+
+//================================================
+// UART TX
+//
+// FPGA -> USB-TTL RX
+//
+// COM11
+// 115200
+// 8N1
+//================================================
+
+IO_LOC "uart_tx" M15;
+IO_PORT "uart_tx" IO_TYPE=LVCMOS33;
+
+
+//================================================
+// TOF1 - LEFT
+//
+// SDA C20
+// SCL D20
+//================================================
+
+IO_LOC "tof1_sda" C20;
+IO_PORT "tof1_sda" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC "tof1_scl" D20;
+IO_PORT "tof1_scl" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+
+//================================================
+// TOF2 - RIGHT
+//
+// SDA D19
+// SCL E19
+//================================================
+
+IO_LOC "tof2_sda" D19;
+IO_PORT "tof2_sda" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC "tof2_scl" E19;
+IO_PORT "tof2_scl" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+
+//================================================
+// TOF3 - CENTER / FRONT
+//
+// SDA E18
+// SCL F18
+//================================================
+
+IO_LOC "tof3_sda" E18;
+IO_PORT "tof3_sda" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC "tof3_scl" F18;
+IO_PORT "tof3_scl" IO_TYPE=LVCMOS33 PULL_MODE=UP;

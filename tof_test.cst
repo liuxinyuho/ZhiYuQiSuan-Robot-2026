@@ -1,0 +1,76 @@
+//============================================================
+// ACG720-GW5AT60K
+// Motor IO hardware test
+//============================================================
+
+
+//============================================================
+// 50MHz Clock
+//============================================================
+
+IO_LOC "clk" Y18;
+IO_PORT "clk" IO_TYPE=LVCMOS33;
+
+
+//============================================================
+// Reset
+//============================================================
+
+IO_LOC "reset_n" B21;
+IO_PORT "reset_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+
+//============================================================
+// Motor A 左前
+//============================================================
+
+IO_LOC "motor_a_pwm" A13;
+IO_PORT "motor_a_pwm" IO_TYPE=LVCMOS33;
+
+IO_LOC "motor_a_in1" A14;
+IO_PORT "motor_a_in1" IO_TYPE=LVCMOS33;
+
+IO_LOC "motor_a_in2" A15;
+IO_PORT "motor_a_in2" IO_TYPE=LVCMOS33;
+
+
+//============================================================
+// Motor B 左后
+//============================================================
+
+IO_LOC "motor_b_pwm" A16;
+IO_PORT "motor_b_pwm" IO_TYPE=LVCMOS33;
+
+IO_LOC "motor_b_in1" A18;
+IO_PORT "motor_b_in1" IO_TYPE=LVCMOS33;
+
+IO_LOC "motor_b_in2" A19;
+IO_PORT "motor_b_in2" IO_TYPE=LVCMOS33;
+
+
+//============================================================
+// Motor C 右前
+//============================================================
+
+IO_LOC "motor_c_pwm" F13;
+IO_PORT "motor_c_pwm" IO_TYPE=LVCMOS33;
+
+IO_LOC "motor_c_in1" F14;
+IO_PORT "motor_c_in1" IO_TYPE=LVCMOS33;
+
+IO_LOC "motor_c_in2" E13;
+IO_PORT "motor_c_in2" IO_TYPE=LVCMOS33;
+
+
+//============================================================
+// Motor D 右后
+//============================================================
+
+IO_LOC "motor_d_pwm" E14;
+IO_PORT "motor_d_pwm" IO_TYPE=LVCMOS33;
+
+IO_LOC "motor_d_in1" C13;
+IO_PORT "motor_d_in1" IO_TYPE=LVCMOS33;
+
+IO_LOC "motor_d_in2" B13;
+IO_PORT "motor_d_in2" IO_TYPE=LVCMOS33;
